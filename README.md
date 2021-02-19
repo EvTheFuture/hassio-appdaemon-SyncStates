@@ -16,14 +16,15 @@ Here is an example configuration for the appdaemon configuration file apps.yaml.
 **Please Note:** You need to change the entities to match your setup.
 ```
 sync_hallway_light:
-    module: sync_states
-    class: SyncStates
-    entity: light.hallway
-    switch: 
-      - switch.hallway_1
-      - switch.hallway_2
-      - switch.hallway_3
-      - switch.hallway_4
-    DEBUG: no
+  module: sync_states
+  class: SyncStates
+  entity: light.hallway
+  switches: 
+    - switch.hallway2
+    - switch.hallway3  
+    - switch.hallway4
+    - switch.hallway5
+    - switch.hallway6
+    - switch.hallway7
+  debug: no
 ```
-
